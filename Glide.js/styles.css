@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.glide {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.glide__slide {
+    display: flex;
+    justify-content: center; /* Центрирование содержимого внутри слайда */
+    align-items: center; /* Выравнивание по вертикали */
+    height: 400px; /* Фиксированная высота для всех слайдов */
+    overflow: hidden; /* Обрезание изображения, чтобы не выходить за пределы */
+}
+
+.glide__slide img {
+    max-width: 100%; /* Ограничение ширины изображения */
+    max-height: 100%; /* Ограничение высоты изображения */
+    object-fit: cover; /* Сохранение пропорций изображения */
+}
+
+.glide__arrows {
+    margin: 10px 0;
+}
+
+.glide__arrow {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.glide__arrow:hover {
+    background-color: #0056b3;
+}
+
+#counter {
+    font-size: 18px;
+    margin-top: 10px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер на Glide.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide"><img src="image1.jpeg" alt="Изображение 1"></li>
+                <li class="glide__slide"><img src="image2.jpeg" alt="Изображение 2"></li>
+                <li class="glide__slide"><img src="image3.jpeg" alt="Изображение 3"></li>
+                <li class="glide__slide"><img src="image4.jpeg" alt="Изображение 4"></li>
+                <li class="glide__slide"><img src="image5.jpeg" alt="Изображение 5"></li>
+            </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Назад</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Вперед</button>
+        </div>
+        <div id="counter"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
